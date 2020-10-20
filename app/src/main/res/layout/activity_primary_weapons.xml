@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/colorPrimaryDark">
 
     <TextView
@@ -70,88 +69,93 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/primaryWeaponsButton"
+        android:id="@+id/assaultRiflesButton"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Primary Weapons"
-        android:textColor="@color/colorText"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countdownText" />
-
-    <Button
-        android:id="@+id/secondaryWeaponsButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:text="Secondary Weapons"
-        android:textColor="@color/colorText"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/primaryWeaponsButton" />
-
-    <Button
-        android:id="@+id/equipmentButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:text="Equipment"
+        android:text="Assault Rifles"
         android:textColor="@color/colorText"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondaryWeaponsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/countdownText" />
 
     <Button
-        android:id="@+id/perksButton"
+        android:id="@+id/submachineGunsButton"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Perks"
+        android:text="Submachine Guns"
         android:textColor="@color/colorText"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/equipmentButton" />
+        app:layout_constraintTop_toBottomOf="@+id/assaultRiflesButton" />
 
     <Button
-        android:id="@+id/wildcardsButton"
+        android:id="@+id/tacticalRiflesButton"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Wildcards"
+        android:text="Tactical Rifles"
         android:textColor="@color/colorText"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/perksButton" />
+        app:layout_constraintTop_toBottomOf="@+id/submachineGunsButton" />
 
     <Button
-        android:id="@+id/scorestreaksButton"
+        android:id="@+id/lightMachineGunsButton"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Scorestreaks"
+        android:text="Light Machine Guns"
         android:textColor="@color/colorText"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wildcardsButton" />
+        app:layout_constraintTop_toBottomOf="@+id/tacticalRiflesButton" />
+
+    <Button
+        android:id="@+id/sniperRiflesButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Sniper Rifles"
+        android:textColor="@color/colorText"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightMachineGunsButton" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="@color/colorText"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sniperRiflesButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

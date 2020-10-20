@@ -11,21 +11,21 @@ import android.widget.TextView;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity extends AppCompatActivity {
+public class PrimaryWeaponsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_primary_weapons);
 
         final TextView tv_countdown = findViewById(R.id.countdownText);
 
-        Button primaryWeapons = findViewById(R.id.primaryWeaponsButton);
+        Button back = findViewById(R.id.backButton);
 
-        primaryWeapons.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PrimaryWeaponsActivity.class));
+                startActivity(new Intent(PrimaryWeaponsActivity.this, MainActivity.class));
             }
         });
 
