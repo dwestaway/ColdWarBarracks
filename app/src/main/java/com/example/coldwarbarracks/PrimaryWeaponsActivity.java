@@ -22,6 +22,9 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
 
         Button assaultRifles = findViewById(R.id.assaultRiflesButton);
         Button submachineGuns = findViewById(R.id.submachineGunsButton);
+        Button tacticalRifles = findViewById(R.id.tacticalRiflesButton);
+        Button lightMachineGuns = findViewById(R.id.lightMachineGunsButton);
+        Button sniperRifles = findViewById(R.id.sniperRiflesButton);
         Button back = findViewById(R.id.backButton);
 
         assaultRifles.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +37,24 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PrimaryWeaponsActivity.this, SubmachineGuns.class));
+            }
+        });
+        tacticalRifles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrimaryWeaponsActivity.this, TacticalRifles.class));
+            }
+        });
+        lightMachineGuns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrimaryWeaponsActivity.this, LightMachineGuns.class));
+            }
+        });
+        sniperRifles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrimaryWeaponsActivity.this, SniperRifles.class));
             }
         });
 
