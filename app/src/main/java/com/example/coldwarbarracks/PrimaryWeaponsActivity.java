@@ -21,12 +21,19 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
         final TextView tv_countdown = findViewById(R.id.countdownText);
 
         Button assaultRifles = findViewById(R.id.assaultRiflesButton);
+        Button submachineGuns = findViewById(R.id.submachineGunsButton);
         Button back = findViewById(R.id.backButton);
 
         assaultRifles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PrimaryWeaponsActivity.this, AssaultRifles.class));
+            }
+        });
+        submachineGuns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrimaryWeaponsActivity.this, SubmachineGuns.class));
             }
         });
 

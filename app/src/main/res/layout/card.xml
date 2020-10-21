@@ -50,4 +50,12 @@
 
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:id="@+id/statsIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/xm4_stats">
+    </ImageView>
+
 </LinearLayout>

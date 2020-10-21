@@ -4,10 +4,12 @@ public class MyModel {
 
     String description;
     int image;
+    int stats;
 
-    public MyModel(String description, int image) {
+    public MyModel(String description, int image, int stats) {
         this.description = description;
         this.image = image;
+        this.stats = stats;
     }
 
     public String getDescription() {
@@ -24,5 +26,13 @@ public class MyModel {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getStats() {
+        return stats;
+    }
+
+    public void setStats(int stats) {
+        this.stats = stats;
     }
 }

@@ -1,6 +1,7 @@
 package com.example.coldwarbarracks;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,15 +46,18 @@ public class MyAdapter extends PagerAdapter {
         //init uid views from card.xml
         ImageView cardIv = view.findViewById(R.id.cardIv);
         TextView cardDesc = view.findViewById(R.id.cardDesc);
+        ImageView statsIv = view.findViewById(R.id.statsIv);
 
         //get data
         MyModel model = modelArrayList.get(position);
         String description = model.getDescription();
         int image = model.getImage();
+        int stats = model.getStats();
 
         //set data
         cardIv.setImageResource(image);
         cardDesc.setText(description);
+        statsIv.setImageResource(stats);
 
         //add view to container
         container.addView(view, position);

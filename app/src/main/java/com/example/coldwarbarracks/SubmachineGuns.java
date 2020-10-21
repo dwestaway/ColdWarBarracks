@@ -4,12 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-public class AssaultRifles extends AppCompatActivity {
+public class SubmachineGuns extends AppCompatActivity {
 
     private ActionBar actionBar;
 
@@ -30,7 +31,7 @@ public class AssaultRifles extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-        actionBar.setTitle("Assault Rifles");
+        actionBar.setTitle("Submachine Guns");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
@@ -51,21 +52,21 @@ public class AssaultRifles extends AppCompatActivity {
 
         //add items to list
         modelArrayList.add(new MyModel(
-                getString(R.string.XM4),
-                R.drawable.xm4,
-                R.drawable.xm4_stats));
+                getString(R.string.MP5),
+                R.drawable.mp5,
+                R.drawable.mp5_stats));
         modelArrayList.add(new MyModel(
-                getString(R.string.AK47),
-                R.drawable.ak47,
-                R.drawable.ak47_stats));
+                getString(R.string.Milano_821),
+                R.drawable.milano,
+                R.drawable.milano_stats));
         modelArrayList.add(new MyModel(
-                getString(R.string.Krig6),
-                R.drawable.krig6,
-                R.drawable.krig6_stats));
+                getString(R.string.AK74u),
+                R.drawable.ak74u,
+                R.drawable.ak74u_stats));
         modelArrayList.add(new MyModel(
-                getString(R.string.QBZ83),
-                R.drawable.qbz83,
-                R.drawable.qbz83_stats));
+                getString(R.string.KSP_45),
+                R.drawable.ksp,
+                R.drawable.ksp_stats));
 
         //setup adapter
         myAdapter = new MyAdapter(this, modelArrayList);

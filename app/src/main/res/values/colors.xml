@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#212121</color>
     <color name="colorAccent">#E53935</color>
     <color name="colorText">#F5F5F5</color>
+
+    <!-- old dark #212121-->
 </resources>
