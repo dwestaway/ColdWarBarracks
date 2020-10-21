@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Cold War Barracks</string>
+
+    <string name="AK47">Full-auto assault rifle. High damage with a marginally slower fire rate. Excellent stopping power for mid to short range encounters.</string>
+    <string name="Krig6">Full-auto assault rifle. Improved damage and accuracy. Excellent weapon control and visibility when sustaining fire.</string>
+    <string name="XM4">Full-auto assault rifle. Reliable damage with improved fire rate. Fair weapon control when sustaining fire.</string>
+    <string name="QBZ83">Full-auto assault rifle. Superiror mobility with improved handling speeds. Erratic initial recoil with less accurate hipfire spread.</string>
+
+    <string name="AK74u">Full-auto submachine gun. Improved damage with reliable weapon control. Utilizes 5.56mm ammo for superior penetration.</string>
+    <string name="Milano_821">Full-auto submachine gun. High damage with a slower fire rate and fair recoil. Improved handling speeds with more accurate hipfire spread.</string>
+    <string name="MP5">Full-auto submachine gun. Fast fire rate with low recoil. Good visibility and control while firing.</string>
+    <string name="KSP_45">3-round burst submachine gun. High damage with moderate range. Burst fire spread is less efficient at long range.</string>
+
+    <string name="M16">Burst fire tactical rifle. Excellent burst fire accuracy when aiming down sights. Good visibility while firing, with a slightly pronounced delay between bursts.</string>
+    <string name="Type_63">Semi-auto tactical rifle. High damage and reliable accuracy with lower ammo capacity. Fair visibility and control while firing.</string>
+
+    <string name="RPD">Full-auto light machine gun. Improved handling speeds with more accurate hipfire spread. Less ammo capacity and heavier recoil when sustaining fire.</string>
+    <string name="Stoner_63">Full-auto light machine gun. Improved fire rate with a large ammo capacity. Good recoil control and visibility when sustaining fire.</string>
+
+    <string name="Pelingtong703">Bolt-action sniper rifle. Hand loaded with improved handling speeds and faster rechamber. 1-shot kill to the head or chest.</string>
+    <string name="LW3_Tundra">Bolt-action sniper rifle. High damage with moderate sway, 1-shot kill to the head, chest or shoulders.</string>
 </resources>
