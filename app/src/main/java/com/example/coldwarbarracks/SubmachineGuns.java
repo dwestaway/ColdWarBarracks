@@ -24,7 +24,7 @@ public class SubmachineGuns extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assault_rifles);
+        setContentView(R.layout.activity_submachine_guns);
 
         actionBar = getSupportActionBar();
 

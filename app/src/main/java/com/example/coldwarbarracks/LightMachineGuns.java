@@ -24,7 +24,7 @@ public class LightMachineGuns extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assault_rifles);
+        setContentView(R.layout.activity_light_machine_guns);
 
         actionBar = getSupportActionBar();
 

@@ -24,7 +24,7 @@ public class TacticalRifles extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assault_rifles);
+        setContentView(R.layout.activity_tactical_rifles);
 
         actionBar = getSupportActionBar();
 

@@ -24,7 +24,7 @@ public class SecondaryWeapons extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assault_rifles);
+        setContentView(R.layout.activity_secondary_weapons);
 
         actionBar = getSupportActionBar();
 
@@ -82,7 +82,7 @@ public class SecondaryWeapons extends AppCompatActivity {
         modelArrayList.add(new MyModel(
                 getString(R.string.Knife),
                 R.drawable.knife,
-                R.drawable.rpg_stats));
+                R.drawable.knife_stats));
 
 
         //setup adapter

@@ -28,6 +28,7 @@ public class MyAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
+
         return modelArrayList.size(); //size of items in list
     }
 
@@ -60,7 +61,7 @@ public class MyAdapter extends PagerAdapter {
         statsIv.setImageResource(stats);
 
         //add view to container
-        container.addView(view, position);
+        container.addView(view);
 
         return view;
     }

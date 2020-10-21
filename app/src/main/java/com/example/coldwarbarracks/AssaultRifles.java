@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -14,9 +15,13 @@ public class AssaultRifles extends AppCompatActivity {
     private ActionBar actionBar;
 
     private ViewPager viewPager;
+    private ViewPager viewPager2;
 
     private ArrayList<MyModel> modelArrayList;
+    private ArrayList<MyModel> modelArrayList2;
+
     private MyAdapter myAdapter;
+    private MyAdapter myAdapter2;
 
 
 
@@ -28,6 +33,7 @@ public class AssaultRifles extends AppCompatActivity {
         actionBar = getSupportActionBar();
 
         viewPager = findViewById(R.id.viewPager);
+
         loadCards();
 
         actionBar.setTitle("Assault Rifles");
@@ -67,11 +73,13 @@ public class AssaultRifles extends AppCompatActivity {
                 R.drawable.qbz83,
                 R.drawable.qbz83_stats));
 
+
         //setup adapter
         myAdapter = new MyAdapter(this, modelArrayList);
         //set adapter to view pager
         viewPager.setAdapter(myAdapter);
         //set default padding from left/right
         viewPager.setPadding(100, 0, 100, 0);
+
     }
 }
