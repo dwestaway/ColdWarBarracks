@@ -21,11 +21,18 @@ public class MainActivity extends AppCompatActivity {
         final TextView tv_countdown = findViewById(R.id.countdownText);
 
         Button primaryWeapons = findViewById(R.id.primaryWeaponsButton);
+        Button secondaryWeapons = findViewById(R.id.secondaryWeaponsButton);
 
         primaryWeapons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PrimaryWeaponsActivity.class));
+            }
+        });
+        secondaryWeapons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SecondaryWeapons.class));
             }
         });
 

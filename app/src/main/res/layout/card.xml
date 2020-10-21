@@ -44,8 +44,8 @@
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:textSize="18dp"
                 android:layout_margin="10dp"
-                android:minLines="4"
-                android:maxLines="4"/>
+                android:minLines="5"
+                android:maxLines="5"/>
 
         </LinearLayout>
 
@@ -55,8 +55,7 @@
         android:id="@+id/statsIv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/xm4_stats">
+        android:layout_gravity="center_horizontal">
     </ImageView>
 
 </LinearLayout>

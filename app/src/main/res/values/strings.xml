@@ -19,4 +19,18 @@
 
     <string name="Pelingtong703">Bolt-action sniper rifle. Hand loaded with improved handling speeds and faster rechamber. 1-shot kill to the head or chest.</string>
     <string name="LW3_Tundra">Bolt-action sniper rifle. High damage with moderate sway, 1-shot kill to the head, chest or shoulders.</string>
+
+
+    <string name="pistol1911">Semi-auto pistol. Good accuracy with a modest ammo capacity. High damage in close range encounters.</string>
+    <string name="Diamatti">Burst fire pistol. Fast cyclic rate of fire with a short delay between bursts. Increased ammo capacity and slightly slower reloading speeds.</string>
+    <string name="Magnum">Double action revolver. High damage with increased penetration and lower muzzle velocity.</string>
+
+    <string name="Hauer77">Pump-action shotgun. High damage with a possible 1-shot kill in close quarters. Hand loaded with moderate rechamber speed.</string>
+    <string name="GalloSA12">Semi-auto shotgun. Reliable damage and pellet spread. Heavy recoil and low visibility when sustaining fire.</string>
+
+    <string name="Cigma2">Free-fire rocket launcher. Lock-on capability vs enemy vehicles. Locked rockets travel faster to their targets and maneuver in flight.</string>
+    <string name="RPG7">Free-fire rocket launcher. Increased blast radius with heavy damage to vehicles, equipment, and personnel. Additional rockets provided.</string>
+
+    <string name="Knife">Lethal melee weapon. Straight-edge blade that kills enemies with a single deadly strike.</string>
+
 </resources>

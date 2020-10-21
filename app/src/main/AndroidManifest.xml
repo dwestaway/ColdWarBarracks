@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SniperRifles"></activity>
+        <activity android:name=".SecondaryWeapons"></activity>
+        <activity android:name=".SniperRifles" />
         <activity android:name=".LightMachineGuns" />
         <activity android:name=".TacticalRifles" />
         <activity android:name=".SubmachineGuns" />
