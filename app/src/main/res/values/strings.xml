@@ -33,4 +33,57 @@
 
     <string name="Knife">Lethal melee weapon. Straight-edge blade that kills enemies with a single deadly strike.</string>
 
+
+    <string name="Frag">Explodes after a short fuse. Can be cooked by holding the grenade key.</string>
+    <string name="C4">High explosive charge that sticks to any surface. Deadly when stuck to vehicles.</string>
+    <string name="Molotov">Explodes on impact, spreading flames over a small area.</string>
+    <string name="Semtex">Grenade that sticks to surfaces before detonating.</string>
+
+    <string name="Stun">Disorients enemies and slows movement. Detonates shortly after impact.</string>
+    <string name="Stimshot">Reusable stimulant that initiates healing immediately.</string>
+    <string name="Smoke">Produces a smoke screen on impact.</string>
+    <string name="Decoy">Simulates footsteps to confuse enemies.</string>
+
+    <string name="ProximityMine">Throwable mine, explodes shortly after an enemy runs or drives over it. Can be avoided by crouching. Destroys any vehicle that runs over it.\nRecharge time: 2:00</string>
+    <string name="FieldMic">Deploys a recording device that highlights enemy sounds on your minimap.\nRecharge time: 3:15</string>
+    <string name="TrophySystem">Destroys thrown enemy equipment and launcher missiles within 10 meter.\nRecharge time: 1:20</string>
+    <string name="SamTurret">Launches missiles at enemy air scorestreaks and player-piloted helicopter.\nRecharge time: 3:45</string>
+    <string name="GasMine">Proximity activated trap that expels a large cloud of harmful gas. Enemies inside are damaged and disoriented.\nRecharge time: 2:00</string>
+    <string name="Jammer">Creates an electronic disruption field, disabling enemy Field Upgrades and degrading enemy minimap information.\nRecharge time: 2:30</string>
+
+
+    <string name="Engineer">Detect enemy equipment and Scorestreaks through walls. See enemy Scorestreaks on your minimap. Re-roll Care Packages.</string>
+    <string name="Paranoia">Hear an alert when an enemy aims at you. Your vision pulses if the enemy is outside of your view.</string>
+    <string name="TacticalMask">Maximized resistance to Flashbang and Stun Grenade. Immune to gas.</string>
+    <string name="FlakJacket">Take less damage from enemy explosives and Molotov and Combat Bow flames.</string>
+
+    <string name="Scavenger">Replenish ammo from fallen players.</string>
+    <string name="Assassin">Enemies that appear on your minimap when shooting or revealed by a Spy Plane will have a crosshair indicator instead of a red dot if they are on a killstreak. Recieve extra Score for taking them down.</string>
+    <string name="Tracker">See imprint of enemy footsteps. Aim at enemies to reveal them on your team's minimap.</string>
+    <string name="Quartermaster">Recharge Equipment over 25 seconds.</string>
+
+    <string name="GungHo">Fire your weapon and use Equipment while sprinting. Move at full speed when reloading. Switch weapons faster. Take less damage from falling. Fire more accurately while sliding.</string>
+    <string name="Ghost">Undetectable by enemy Spy Planes whenever you are moving, planting or defusing bombs, or controlling Scorestreaks.</string>
+    <string name="ColdBlooded">AI-controlled Scorestreaks will not target you. Player-controlled Scorestreaks will not highlight you. Show up cold on Thermal. Players in vehicles won't see your nameplate.</string>
+    <string name="Ninja">Sprint more quietly. Resistant to Field Mic when sprinting. Speak only when necessary.</string>
+
+
+    <string name="DangerClose">Equip extra lethal and tactical equipment. Start with additional ammo.</string>
+    <string name="LawBreaker">Equip any weapon class in either slot. Equip multiple perks from one Perk Category.</string>
+    <string name="Gunfighter">Unlock 3 qdditional attachment slots for your primary weapon.</string>
+    <string name="PerkGreed">Equip an extra Perk from each Perk Category.</string>
+
+
+    <string name="RCXD">Remote controlled car strapped with explosives. Cooldown: 90 sec</string>
+    <string name="SpyPlane">Reveal enemy positions through the Fog of War. Cooldown: 90 sec</string>
+    <string name="CounterSpyPlane">Scramble enemy mini-maps and disable hostile Missile Turrets for a short time. Cooldown: 60 sec</string>
+    <string name="SentryTurret">Deploy a deadly automated turret that targets enemy player, vehicles and equipment. Cooldown: 60 sec</string>
+    <string name="NapalmStrike">Launch a targeted carpet bomb strike of explosive napalm. Cooldown: 60 sec</string>
+    <string name="Artillery">Launch three targeted airstrikes. Unused strikes can be saved for later. Cooldown: 60 sec</string>
+    <string name="AirPatrol">Call in a squadron of jets to attack enemy air Scorestreaks. Counter enemy Air Patrols. Cooldown: 60 sec</string>
+    <string name="WarMachine">High-explosive grenade launcher. Cooldown: 60 sec</string>
+    <string name="AttackHelicopter">Call in an armed support helicopter. Cooldown: 60 sec</string>
+    <string name="ChopperGunner">Be the gunner in a close air support helicopter. Cooldown: 60 sec</string>
+
+
 </resources>
