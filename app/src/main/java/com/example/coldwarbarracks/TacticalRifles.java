@@ -51,11 +51,11 @@ public class TacticalRifles extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("Type 63",
                 getString(R.string.Type_63),
                 R.drawable.type63,
                 R.drawable.type63_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("M16",
                 getString(R.string.M16),
                 R.drawable.m16,
                 R.drawable.m16_stats));

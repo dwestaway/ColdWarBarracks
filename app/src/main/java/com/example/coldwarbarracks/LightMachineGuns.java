@@ -51,11 +51,11 @@ public class LightMachineGuns extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("Stoner 63",
                 getString(R.string.Stoner_63),
                 R.drawable.stoner63,
                 R.drawable.stoner63_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("RPD",
                 getString(R.string.RPD),
                 R.drawable.rpd,
                 R.drawable.rpd_stats));

@@ -57,19 +57,19 @@ public class AssaultRifles extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("XM4",
                 getString(R.string.XM4),
                 R.drawable.xm4,
                 R.drawable.xm4_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("AK47",
                 getString(R.string.AK47),
                 R.drawable.ak47,
                 R.drawable.ak47_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("Krig 6",
                 getString(R.string.Krig6),
                 R.drawable.krig6,
                 R.drawable.krig6_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("QBZ-83",
                 getString(R.string.QBZ83),
                 R.drawable.qbz83,
                 R.drawable.qbz83_stats));

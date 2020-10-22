@@ -51,19 +51,19 @@ public class SubmachineGuns extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("MP5",
                 getString(R.string.MP5),
                 R.drawable.mp5,
                 R.drawable.mp5_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("Milano 821",
                 getString(R.string.Milano_821),
                 R.drawable.milano,
                 R.drawable.milano_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("AK-74u",
                 getString(R.string.AK74u),
                 R.drawable.ak74u,
                 R.drawable.ak74u_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("KSP 45",
                 getString(R.string.KSP_45),
                 R.drawable.ksp,
                 R.drawable.ksp_stats));

@@ -51,11 +51,11 @@ public class SniperRifles extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("Pelington 703",
                 getString(R.string.Pelingtong703),
                 R.drawable.pelington703,
                 R.drawable.pelington703_stats));
-        modelArrayList.add(new MyModel(
+        modelArrayList.add(new MyModel("LW3 - Tundra",
                 getString(R.string.LW3_Tundra),
                 R.drawable.lw3_tundra,
                 R.drawable.lw3_tundra_stats));

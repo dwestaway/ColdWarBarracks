@@ -45,19 +45,22 @@ public class MyAdapter extends PagerAdapter {
         View view = LayoutInflater.from(context).inflate(R.layout.card, container, false);
 
         //init uid views from card.xml
-        ImageView cardIv = view.findViewById(R.id.cardIv);
+        TextView cardTitle = view.findViewById(R.id.cardTitle);
         TextView cardDesc = view.findViewById(R.id.cardDesc);
+        ImageView cardIv = view.findViewById(R.id.cardIv);
         ImageView statsIv = view.findViewById(R.id.statsIv);
 
         //get data
         MyModel model = modelArrayList.get(position);
+        String title = model.getTitle();
         String description = model.getDescription();
         int image = model.getImage();
         int stats = model.getStats();
 
         //set data
-        cardIv.setImageResource(image);
+        cardTitle.setText(title);
         cardDesc.setText(description);
+        cardIv.setImageResource(image);
         statsIv.setImageResource(stats);
 
         //add view to container
