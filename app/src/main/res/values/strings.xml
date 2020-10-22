@@ -84,12 +84,15 @@
     <string name="WarMachine">High-explosive grenade launcher. Cooldown: 60 sec</string>
     <string name="AttackHelicopter">Call in an armed support helicopter. Cooldown: 60 sec</string>
     <string name="ChopperGunner">Be the gunner in a close air support helicopter. Cooldown: 60 sec</string>
-    <string name="title_activity_equipment">Equipment</string>
 
 
     <string name="tab_text_1">Lethal</string>
     <string name="tab_text_2">Tactical</string>
     <string name="tab_text_3">Field Upgrade</string>
+
+    <string name="tab_text_perks1">Perk 1</string>
+    <string name="tab_text_perks2">Perk 2</string>
+    <string name="tab_text_perks3">Perk 3</string>
 
 
 </resources>

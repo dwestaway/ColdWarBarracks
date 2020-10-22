@@ -15,13 +15,10 @@ public class AssaultRifles extends AppCompatActivity {
     private ActionBar actionBar;
 
     private ViewPager viewPager;
-    private ViewPager viewPager2;
 
     private ArrayList<MyModel> modelArrayList;
-    private ArrayList<MyModel> modelArrayList2;
 
     private MyAdapter myAdapter;
-    private MyAdapter myAdapter2;
 
 
 
@@ -36,8 +33,6 @@ public class AssaultRifles extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
 
         loadCards();
-
-
 
 
     }

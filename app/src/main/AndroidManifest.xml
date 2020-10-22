@@ -11,7 +11,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Equipment"
-            android:label="@string/title_activity_equipment"></activity>
+            android:label="Equipment"></activity>
+        <activity
+            android:name=".Perks"
+            android:label="Perks"></activity>
         <activity android:name=".SecondaryWeapons"
             android:label="Secondary Weapons"/>
         <activity android:name=".SniperRifles"
