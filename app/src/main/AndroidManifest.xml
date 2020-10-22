@@ -10,23 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Wildcards"
+            android:label="WILDCARDS" />
+        <activity
             android:name=".Equipment"
-            android:label="Equipment"></activity>
+            android:label="EQUIPMENT" />
         <activity
             android:name=".Perks"
-            android:label="Perks"></activity>
-        <activity android:name=".SecondaryWeapons"
-            android:label="Secondary Weapons"/>
-        <activity android:name=".SniperRifles"
-            android:label="Sniper Rifles"/>
-        <activity android:name=".LightMachineGuns"
-            android:label="Light Machine Guns"/>
-        <activity android:name=".TacticalRifles"
-            android:label="Tactical Rifles"/>
-        <activity android:name=".SubmachineGuns"
-            android:label="Submachine Guns"/>
-        <activity android:name=".AssaultRifles"
-            android:label="Assault Rifles"/>
+            android:label="PERKS" />
+        <activity
+            android:name=".SecondaryWeapons"
+            android:label="SECONDARY WEAPONS" />
+        <activity
+            android:name=".SniperRifles"
+            android:label="SNIPER RIFLES" />
+        <activity
+            android:name=".LightMachineGuns"
+            android:label="LIGHT MACHINE GUNS" />
+        <activity
+            android:name=".TacticalRifles"
+            android:label="TACTICAL RIFLES" />
+        <activity
+            android:name=".SubmachineGuns"
+            android:label="SUBMACHINE GUNS" />
+        <activity
+            android:name=".AssaultRifles"
+            android:label="ASSAULT RIFLES" />
         <activity
             android:name=".PrimaryWeaponsActivity"
             android:theme="@style/AppTheme.NoActionBar" />

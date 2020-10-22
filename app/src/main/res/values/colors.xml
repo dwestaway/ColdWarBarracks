@@ -2,8 +2,9 @@
 <resources>
     <color name="colorPrimary">#424242</color>
     <color name="colorPrimaryDark">#212121</color>
-    <color name="colorAccent">#E53935</color>
+    <color name="colorAccent">#F5F5F5</color>
     <color name="colorText">#F5F5F5</color>
 
-    <!-- old dark #212121-->
+    <!-- old dark 212121 -->
+    <!-- old accent E53935 -->
 </resources>

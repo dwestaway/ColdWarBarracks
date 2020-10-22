@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/blackopsone"
         android:text="Call of Duty"
-        android:textColor="@color/colorText"
+        android:textColor="@color/colorPrimary"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
