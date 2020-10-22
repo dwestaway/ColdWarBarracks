@@ -27,12 +27,11 @@ public class SecondaryWeapons extends AppCompatActivity {
         setContentView(R.layout.activity_secondary_weapons);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-        actionBar.setTitle("Secondary Weapons");
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

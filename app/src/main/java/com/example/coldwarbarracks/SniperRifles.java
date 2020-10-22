@@ -27,12 +27,10 @@ public class SniperRifles extends AppCompatActivity {
         setContentView(R.layout.activity_sniper_rifles);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
         loadCards();
-
-        actionBar.setTitle("Sniper Rifles");
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

@@ -27,12 +27,11 @@ public class TacticalRifles extends AppCompatActivity {
         setContentView(R.layout.activity_tactical_rifles);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-        actionBar.setTitle("Tactical Rifles");
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

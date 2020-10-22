@@ -27,12 +27,12 @@ public class LightMachineGuns extends AppCompatActivity {
         setContentView(R.layout.activity_light_machine_guns);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-        actionBar.setTitle("Light Machine Guns");
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
     }
 

@@ -27,12 +27,11 @@ public class SubmachineGuns extends AppCompatActivity {
         setContentView(R.layout.activity_submachine_guns);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-        actionBar.setTitle("Submachine Guns");
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

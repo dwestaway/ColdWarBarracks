@@ -11,14 +11,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Equipment"
-            android:label="@string/title_activity_equipment"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".SecondaryWeapons" />
-        <activity android:name=".SniperRifles" />
-        <activity android:name=".LightMachineGuns" />
-        <activity android:name=".TacticalRifles" />
-        <activity android:name=".SubmachineGuns" />
-        <activity android:name=".AssaultRifles" />
+            android:label="@string/title_activity_equipment"></activity>
+        <activity android:name=".SecondaryWeapons"
+            android:label="Secondary Weapons"/>
+        <activity android:name=".SniperRifles"
+            android:label="Sniper Rifles"/>
+        <activity android:name=".LightMachineGuns"
+            android:label="Light Machine Guns"/>
+        <activity android:name=".TacticalRifles"
+            android:label="Tactical Rifles"/>
+        <activity android:name=".SubmachineGuns"
+            android:label="Submachine Guns"/>
+        <activity android:name=".AssaultRifles"
+            android:label="Assault Rifles"/>
         <activity
             android:name=".PrimaryWeaponsActivity"
             android:theme="@style/AppTheme.NoActionBar" />

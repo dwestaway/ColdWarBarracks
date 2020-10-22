@@ -31,13 +31,13 @@ public class AssaultRifles extends AppCompatActivity {
         setContentView(R.layout.activity_assault_rifles);
 
         actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         viewPager = findViewById(R.id.viewPager);
 
         loadCards();
 
-        actionBar.setTitle("Assault Rifles");
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
 
     }
