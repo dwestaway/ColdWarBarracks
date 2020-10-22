@@ -59,12 +59,12 @@
 
     <string name="Scavenger">Replenish ammo from fallen players.</string>
     <string name="Assassin">Enemies that appear on your minimap when shooting or revealed by a Spy Plane will have a crosshair indicator instead of a red dot if they are on a killstreak. Recieve extra Score for taking them down.</string>
-    <string name="Tracker">See imprint of enemy footsteps. Aim at enemies to reveal them on your team's minimap.</string>
+    <string name="Tracker">See imprint of enemy footsteps. Aim at enemies to reveal them on your teams minimap.</string>
     <string name="Quartermaster">Recharge Equipment over 25 seconds.</string>
 
     <string name="GungHo">Fire your weapon and use Equipment while sprinting. Move at full speed when reloading. Switch weapons faster. Take less damage from falling. Fire more accurately while sliding.</string>
     <string name="Ghost">Undetectable by enemy Spy Planes whenever you are moving, planting or defusing bombs, or controlling Scorestreaks.</string>
-    <string name="ColdBlooded">AI-controlled Scorestreaks will not target you. Player-controlled Scorestreaks will not highlight you. Show up cold on Thermal. Players in vehicles won't see your nameplate.</string>
+    <string name="ColdBlooded">AI-controlled Scorestreaks will not target you. Player-controlled Scorestreaks will not highlight you. Show up cold on Thermal. Players in vehicles wont see your nameplate.</string>
     <string name="Ninja">Sprint more quietly. Resistant to Field Mic when sprinting. Speak only when necessary.</string>
 
 
@@ -84,6 +84,12 @@
     <string name="WarMachine">High-explosive grenade launcher. Cooldown: 60 sec</string>
     <string name="AttackHelicopter">Call in an armed support helicopter. Cooldown: 60 sec</string>
     <string name="ChopperGunner">Be the gunner in a close air support helicopter. Cooldown: 60 sec</string>
+    <string name="title_activity_equipment">Equipment</string>
+
+
+    <string name="tab_text_1">Lethal</string>
+    <string name="tab_text_2">Tactical</string>
+    <string name="tab_text_3">Field Upgrade</string>
 
 
 </resources>

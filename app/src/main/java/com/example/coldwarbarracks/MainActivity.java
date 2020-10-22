@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button primaryWeapons = findViewById(R.id.primaryWeaponsButton);
         Button secondaryWeapons = findViewById(R.id.secondaryWeaponsButton);
+        Button equipment = findViewById(R.id.equipmentButton);
 
         primaryWeapons.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SecondaryWeapons.class));
+            }
+        });
+        equipment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Equipment.class));
             }
         });
 

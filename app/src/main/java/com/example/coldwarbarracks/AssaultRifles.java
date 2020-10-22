@@ -39,6 +39,7 @@ public class AssaultRifles extends AppCompatActivity {
         actionBar.setTitle("Assault Rifles");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+
     }
 
     //handle back button
