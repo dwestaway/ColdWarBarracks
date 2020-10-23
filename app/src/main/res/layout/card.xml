@@ -10,21 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="20dp"
+        android:background="@color/colorText">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/colorText">
 
 
             <ImageView
                 android:id="@+id/cardIv"
                 android:src="@drawable/ak47"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:maxWidth="283dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:maxHeight="147dp"
                 android:scaleType="centerCrop"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="3dp"/>
@@ -64,8 +67,7 @@
 
     <ImageView
         android:id="@+id/statsIv"
-        android:layout_width="match_parent"
-        android:maxWidth="500dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal">
     </ImageView>

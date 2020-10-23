@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button equipment = findViewById(R.id.equipmentButton);
         Button perks = findViewById(R.id.perksButton);
         Button wildcards = findViewById(R.id.wildcardsButton);
+        Button scorestreaks = findViewById(R.id.scorestreaksButton);
 
         primaryWeapons.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Wildcards.class));
+            }
+        });
+        scorestreaks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Scorestreaks.class));
             }
         });
 

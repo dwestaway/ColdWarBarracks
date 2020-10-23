@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Scorestreaks"
+            android:label="SCORESTREAKS"/>
+        <activity
             android:name=".Wildcards"
             android:label="WILDCARDS" />
         <activity
