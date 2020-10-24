@@ -1,8 +1,10 @@
 package com.example.coldwarbarracks;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -75,6 +77,19 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
                 startActivity(new Intent(PrimaryWeaponsActivity.this, MainActivity.class));
             }
         });
+
+
+        //get display height
+        int height = Resources.getSystem().getDisplayMetrics().heightPixels;
+        //calculate suitable top margin size for buttons
+        int margin = (height - 600) / 30;
+
+        //set button top margins, this is so buttons are spaced out more depending on size of screen
+        ((ConstraintLayout.LayoutParams) submachineGuns.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) tacticalRifles.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) lightMachineGuns.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) sniperRifles.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) back.getLayoutParams()).topMargin = margin;
 
 
         //initialize banner ad

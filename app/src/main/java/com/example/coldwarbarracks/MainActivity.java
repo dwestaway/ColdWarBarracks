@@ -2,13 +2,20 @@ package com.example.coldwarbarracks;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Display;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -78,6 +85,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //get display height
+        int height = Resources.getSystem().getDisplayMetrics().heightPixels;
+        //calculate suitable top margin size for buttons
+        int margin = (height - 600) / 30;
+
+        Toast.makeText(getApplicationContext(), Integer.toString(margin),Toast.LENGTH_LONG).show();
+
+        //set button top margins, this is so buttons are spaced out more depending on size of screen
+        ((ConstraintLayout.LayoutParams) secondaryWeapons.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) equipment.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) perks.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) wildcards.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) scorestreaks.getLayoutParams()).topMargin = margin;
+
+
         //initialize banner ad
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -87,8 +109,6 @@ public class MainActivity extends AppCompatActivity {
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
-
 
         Calendar start_calendar = Calendar.getInstance();
         Calendar end_calendar = Calendar.getInstance();
