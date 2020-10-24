@@ -9,48 +9,75 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Scorestreaks"
-            android:label="SCORESTREAKS"/>
-        <activity
-            android:name=".Wildcards"
-            android:label="WILDCARDS" />
-        <activity
-            android:name=".Equipment"
-            android:label="EQUIPMENT" />
-        <activity
-            android:name=".Perks"
-            android:label="PERKS" />
-        <activity
-            android:name=".SecondaryWeapons"
-            android:label="SECONDARY WEAPONS" />
-        <activity
-            android:name=".SniperRifles"
-            android:label="SNIPER RIFLES" />
-        <activity
-            android:name=".LightMachineGuns"
-            android:label="LIGHT MACHINE GUNS" />
-        <activity
-            android:name=".TacticalRifles"
-            android:label="TACTICAL RIFLES" />
-        <activity
-            android:name=".SubmachineGuns"
-            android:label="SUBMACHINE GUNS" />
-        <activity
-            android:name=".AssaultRifles"
-            android:label="ASSAULT RIFLES" />
-        <activity
-            android:name=".PrimaryWeaponsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Scorestreaks"
+            android:label="SCORESTREAKS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Wildcards"
+            android:label="WILDCARDS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Equipment"
+            android:label="EQUIPMENT"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Perks"
+            android:label="PERKS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SecondaryWeapons"
+            android:label="SECONDARY WEAPONS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SniperRifles"
+            android:label="SNIPER RIFLES"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LightMachineGuns"
+            android:label="LIGHT MACHINE GUNS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TacticalRifles"
+            android:label="TACTICAL RIFLES"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SubmachineGuns"
+            android:label="SUBMACHINE GUNS"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AssaultRifles"
+            android:label="ASSAULT RIFLES"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrimaryWeaponsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+
     </application>
 
 </manifest>
