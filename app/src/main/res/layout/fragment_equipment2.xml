@@ -17,9 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp">
+            android:layout_margin="10dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -53,7 +51,7 @@
                         android:fontFamily="@font/sfprodisplay_bold"
                         android:text="Stun Grenade"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         app:layout_constraintStart_toEndOf="@+id/cardIv"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,7 +67,7 @@
                         android:paddingBottom="16dp"
                         android:text="@string/Stun"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_marginLeft="10dp"
                         app:layout_constraintTop_toBottomOf="@+id/cardIv" />
 
@@ -110,7 +108,7 @@
                         android:fontFamily="@font/sfprodisplay_bold"
                         android:text="Stimshot"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         app:layout_constraintStart_toEndOf="@+id/cardIv2"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -126,7 +124,7 @@
                         android:paddingBottom="16dp"
                         android:text="@string/Stimshot"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_marginLeft="10dp"
                         app:layout_constraintTop_toBottomOf="@+id/cardIv2" />
 
@@ -167,7 +165,7 @@
                         android:fontFamily="@font/sfprodisplay_bold"
                         android:text="Smoke Grenade"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         app:layout_constraintStart_toEndOf="@+id/cardIv3"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -183,7 +181,7 @@
                         android:paddingBottom="16dp"
                         android:text="@string/Smoke"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_marginLeft="10dp"
                         app:layout_constraintTop_toBottomOf="@+id/cardIv3" />
 
@@ -224,7 +222,7 @@
                         android:fontFamily="@font/sfprodisplay_bold"
                         android:text="Decoy"
                         android:textColor="@color/colorPrimaryDark"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         app:layout_constraintStart_toEndOf="@+id/cardIv4"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -239,7 +237,7 @@
                         android:paddingRight="8dp"
                         android:text="@string/Decoy"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18dp"
+                        android:textSize="16dp"
                         android:layout_marginLeft="10dp"
                         app:layout_constraintTop_toBottomOf="@+id/cardIv4" />
 

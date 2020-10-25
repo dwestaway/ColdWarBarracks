@@ -17,9 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp">
+            android:layout_margin="10dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -54,7 +52,7 @@
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:text="Frag"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="22dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/cardIv"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,7 +68,7 @@
                 android:paddingBottom="16dp"
                 android:text="@string/Frag"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/cardIv" />
 
@@ -111,7 +109,7 @@
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:text="C4"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="22dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/cardIv2"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -127,7 +125,7 @@
                 android:paddingBottom="16dp"
                 android:text="@string/C4"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/cardIv2" />
 
@@ -168,7 +166,7 @@
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:text="Molotov"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="22dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/cardIv3"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -184,7 +182,7 @@
                 android:paddingBottom="16dp"
                 android:text="@string/Molotov"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/cardIv3" />
 
@@ -225,7 +223,7 @@
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:text="Semtex"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="22dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/cardIv4"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -241,7 +239,7 @@
                 android:paddingBottom="16dp"
                 android:text="@string/Semtex"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:layout_marginLeft="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/cardIv4" />
 
