@@ -6,7 +6,8 @@
         android:bottomRightRadius="18dp"></corners>
 
     <stroke
-        android:width="6px"
+        android:width="5px"
+
         android:color="@color/colorPrimary" />
 
 </shape>

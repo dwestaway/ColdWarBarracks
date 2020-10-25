@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LightMachineGuns"
-    android:background="@color/colorPrimaryDark">
+    android:background="@drawable/gradient1">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

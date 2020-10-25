@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
 
+
+
         final TextView tv_countdown = findViewById(R.id.countdownText);
 
         final Button primaryWeaponsButton = findViewById(R.id.primaryWeaponsButton);
