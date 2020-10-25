@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -40,7 +41,10 @@ public class LightMachineGuns extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {case android.R.id.home:onBackPressed();break;}
+        if(item.getItemId() == android.R.id.home)
+        {
+            startActivity(new Intent(LightMachineGuns.this,PrimaryWeaponsActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }

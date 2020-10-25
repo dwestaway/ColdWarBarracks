@@ -1,5 +1,6 @@
 package com.example.coldwarbarracks;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -41,7 +42,10 @@ public class Equipment extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {case android.R.id.home:onBackPressed();break;}
+        if(item.getItemId() == android.R.id.home)
+        {
+            startActivity(new Intent(Equipment.this,MainActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }

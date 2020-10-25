@@ -1,5 +1,6 @@
 package com.example.coldwarbarracks;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -35,7 +36,10 @@ public class Perks extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()) {case android.R.id.home:onBackPressed();break;}
+        if(item.getItemId() == android.R.id.home)
+        {
+            startActivity(new Intent(Perks.this,MainActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }

@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -24,6 +27,8 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
 
     AdView mAdView;
 
+    Animation scaleUp, scaleDown;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,51 +38,126 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
 
 
         //initialize buttons
-        Button assaultRifles = findViewById(R.id.assaultRiflesButton);
-        Button submachineGuns = findViewById(R.id.submachineGunsButton);
-        Button tacticalRifles = findViewById(R.id.tacticalRiflesButton);
-        Button lightMachineGuns = findViewById(R.id.lightMachineGunsButton);
-        Button sniperRifles = findViewById(R.id.sniperRiflesButton);
-        Button back = findViewById(R.id.backButton);
+        final Button assaultRiflesButton = findViewById(R.id.assaultRiflesButton);
+        final Button submachineGunsButton = findViewById(R.id.submachineGunsButton);
+        final Button tacticalRiflesButton = findViewById(R.id.tacticalRiflesButton);
+        final Button lightMachineGunsButton = findViewById(R.id.lightMachineGunsButton);
+        final Button sniperRiflesButton = findViewById(R.id.sniperRiflesButton);
+        final Button backButton = findViewById(R.id.backButton);
 
-        assaultRifles.setOnClickListener(new View.OnClickListener() {
+        //load animations
+        scaleUp = AnimationUtils.loadAnimation(this,R.anim.scale_up);
+        scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down);
+
+        //initialize buttons and set animations
+        assaultRiflesButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    assaultRiflesButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    assaultRiflesButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, AssaultRifles.class));
+
+                return true;
             }
         });
-        submachineGuns.setOnClickListener(new View.OnClickListener() {
+        submachineGunsButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    submachineGunsButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    submachineGunsButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, SubmachineGuns.class));
+
+                return true;
             }
         });
-        tacticalRifles.setOnClickListener(new View.OnClickListener() {
+        tacticalRiflesButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    tacticalRiflesButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    tacticalRiflesButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, TacticalRifles.class));
+
+                return true;
             }
         });
-        lightMachineGuns.setOnClickListener(new View.OnClickListener() {
+        lightMachineGunsButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    lightMachineGunsButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    lightMachineGunsButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, LightMachineGuns.class));
+
+                return true;
             }
         });
-        sniperRifles.setOnClickListener(new View.OnClickListener() {
+        sniperRiflesButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    sniperRiflesButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    sniperRiflesButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, SniperRifles.class));
+
+                return true;
             }
         });
-
-        back.setOnClickListener(new View.OnClickListener() {
+        backButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    backButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    backButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(PrimaryWeaponsActivity.this, MainActivity.class));
+
+                return true;
             }
         });
-
 
         //get display height
         int height = Resources.getSystem().getDisplayMetrics().heightPixels;
@@ -85,11 +165,11 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
         int margin = (height - 600) / 30;
 
         //set button top margins, this is so buttons are spaced out more depending on size of screen
-        ((ConstraintLayout.LayoutParams) submachineGuns.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) tacticalRifles.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) lightMachineGuns.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) sniperRifles.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) back.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) submachineGunsButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) tacticalRiflesButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) lightMachineGunsButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) sniperRiflesButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) backButton.getLayoutParams()).topMargin = margin;
 
 
         //initialize banner ad

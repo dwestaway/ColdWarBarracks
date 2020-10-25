@@ -94,7 +94,7 @@
         android:text="Secondary Weapons"
         android:textColor="@color/colorText"
         android:fontFamily="@font/blackopsone"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/primaryWeaponsButton" />
@@ -109,7 +109,7 @@
         android:text="Equipment"
         android:fontFamily="@font/blackopsone"
         android:textColor="@color/colorText"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,7 +125,7 @@
         android:text="Perks"
         android:fontFamily="@font/blackopsone"
         android:textColor="@color/colorText"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equipmentButton" />
@@ -140,7 +140,7 @@
         android:text="Wildcards"
         android:fontFamily="@font/blackopsone"
         android:textColor="@color/colorText"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/perksButton" />
@@ -155,7 +155,7 @@
         android:text="Scorestreaks"
         android:fontFamily="@font/blackopsone"
         android:textColor="@color/colorText"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wildcardsButton" />

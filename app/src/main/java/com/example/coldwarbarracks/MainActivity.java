@@ -8,7 +8,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     AdView mAdView;
 
+    Animation scaleUp, scaleDown;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -36,48 +41,125 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView tv_countdown = findViewById(R.id.countdownText);
 
-        Button primaryWeapons = findViewById(R.id.primaryWeaponsButton);
-        Button secondaryWeapons = findViewById(R.id.secondaryWeaponsButton);
-        Button equipment = findViewById(R.id.equipmentButton);
-        Button perks = findViewById(R.id.perksButton);
-        Button wildcards = findViewById(R.id.wildcardsButton);
-        Button scorestreaks = findViewById(R.id.scorestreaksButton);
+        final Button primaryWeaponsButton = findViewById(R.id.primaryWeaponsButton);
+        final Button secondaryWeaponsButton = findViewById(R.id.secondaryWeaponsButton);
+        final Button equipmentButton = findViewById(R.id.equipmentButton);
+        final Button perksButton = findViewById(R.id.perksButton);
+        final Button wildcardsButton = findViewById(R.id.wildcardsButton);
+        final Button scorestreaksButton = findViewById(R.id.scorestreaksButton);
 
-        //initialize buttons
-        primaryWeapons.setOnClickListener(new View.OnClickListener() {
+        //load animations
+        scaleUp = AnimationUtils.loadAnimation(this,R.anim.scale_up);
+        scaleDown = AnimationUtils.loadAnimation(this,R.anim.scale_down);
+
+
+        //initialize buttons and set animations
+        primaryWeaponsButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    primaryWeaponsButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    primaryWeaponsButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, PrimaryWeaponsActivity.class));
+
+                return true;
             }
         });
-        secondaryWeapons.setOnClickListener(new View.OnClickListener() {
+        secondaryWeaponsButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    secondaryWeaponsButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    secondaryWeaponsButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, SecondaryWeapons.class));
+
+                return true;
             }
         });
-        equipment.setOnClickListener(new View.OnClickListener() {
+        equipmentButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    equipmentButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    equipmentButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, Equipment.class));
+
+                return true;
             }
         });
-        perks.setOnClickListener(new View.OnClickListener() {
+        perksButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    perksButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    perksButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, Perks.class));
+
+                return true;
             }
         });
-        wildcards.setOnClickListener(new View.OnClickListener() {
+        wildcardsButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    wildcardsButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    wildcardsButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, Wildcards.class));
+
+                return true;
             }
         });
-        scorestreaks.setOnClickListener(new View.OnClickListener() {
+        scorestreaksButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_DOWN)
+                {
+                    scorestreaksButton.startAnimation(scaleUp);
+                }
+                else if(event.getAction() == MotionEvent.ACTION_UP)
+                {
+                    scorestreaksButton.startAnimation(scaleDown);
+                }
+
                 startActivity(new Intent(MainActivity.this, Scorestreaks.class));
+
+                return true;
             }
         });
 
@@ -89,11 +171,11 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(), Integer.toString(margin),Toast.LENGTH_LONG).show();
 
         //set button top margins, this is so buttons are spaced out more depending on size of screen
-        ((ConstraintLayout.LayoutParams) secondaryWeapons.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) equipment.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) perks.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) wildcards.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) scorestreaks.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) secondaryWeaponsButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) equipmentButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) perksButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) wildcardsButton.getLayoutParams()).topMargin = margin;
+        ((ConstraintLayout.LayoutParams) scorestreaksButton.getLayoutParams()).topMargin = margin;
 
 
         //initialize banner ad
