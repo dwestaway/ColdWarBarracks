@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coldwarbarracks">
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -30,7 +30,7 @@
         </activity>
         <activity
             android:name=".Scorestreaks"
-            android:label="SCORESTREAKS"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
@@ -50,32 +50,32 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".SecondaryWeapons"
-            android:label="SECONDARY WEAPONS"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".SniperRifles"
-            android:label="SNIPER RIFLES"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".LightMachineGuns"
-            android:label="LIGHT MACHINE GUNS"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".TacticalRifles"
-            android:label="TACTICAL RIFLES"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".SubmachineGuns"
-            android:label="SUBMACHINE GUNS"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".AssaultRifles"
-            android:label="ASSAULT RIFLES"
+            android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity

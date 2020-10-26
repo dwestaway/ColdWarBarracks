@@ -8,6 +8,14 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 
@@ -20,31 +28,36 @@ public class SniperRifles extends AppCompatActivity {
     private ArrayList<MyModel> modelArrayList;
     private MyAdapter myAdapter;
 
-
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sniper_rifles);
 
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
-    }
+        ImageButton backButton = findViewById(R.id.buttonBack);
 
-    //handle back button
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SniperRifles.this,PrimaryWeaponsActivity.class));
+            }
+        });
 
-        if(item.getItemId() == android.R.id.home)
-        {
-            startActivity(new Intent(SniperRifles.this,PrimaryWeaponsActivity.class));
-        }
 
-        return super.onOptionsItemSelected(item);
+        //initialize banner ad
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
     }
 
     private void loadCards() {

@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -43,7 +44,7 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
         final Button tacticalRiflesButton = findViewById(R.id.tacticalRiflesButton);
         final Button lightMachineGunsButton = findViewById(R.id.lightMachineGunsButton);
         final Button sniperRiflesButton = findViewById(R.id.sniperRiflesButton);
-        final Button backButton = findViewById(R.id.backButton);
+        final ImageButton backButton = findViewById(R.id.backButton);
 
         //load animations
         scaleUp = AnimationUtils.loadAnimation(this,R.anim.scale_up);

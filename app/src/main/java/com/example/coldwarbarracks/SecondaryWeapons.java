@@ -8,6 +8,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -33,12 +35,18 @@ public class SecondaryWeapons extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary_weapons);
 
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
         viewPager = findViewById(R.id.viewPager);
         loadCards();
 
+
+        ImageButton backButton = findViewById(R.id.buttonBack);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SecondaryWeapons.this,MainActivity.class));
+            }
+        });
 
         //initialize banner ad
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -52,17 +60,6 @@ public class SecondaryWeapons extends AppCompatActivity {
 
     }
 
-    //handle back button
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if(item.getItemId() == android.R.id.home)
-        {
-            startActivity(new Intent(SecondaryWeapons.this,MainActivity.class));
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     private void loadCards() {
         //init list
