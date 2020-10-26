@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/gradient1">
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </Space>
+
+
     <TextView
-        android:id="@+id/title1"
+        android:id="@+id/title2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:padding="0dp"
         android:fontFamily="@font/blackopsone"
-        android:text="CALL OF DUTY"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        android:layout_gravity="center_horizontal"
+        android:text="COLD WAR"
+        android:textColor="@color/colorText"
+        android:textSize="60sp" />
 
     <TextView
         android:id="@+id/title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/blackopsone"
-        android:layout_marginTop="135dp"
+        android:layout_gravity="center_horizontal"
         android:text="Barracks"
-        android:textColor="@color/colorText"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/countdownText"
@@ -45,41 +42,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/blackopsone"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
         android:text="0 days 0 hours 0 minutes"
         android:textColor="@color/colorText"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.029" />
+        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="327dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="85dp"
-        android:fontFamily="@font/blackopsone"
-        android:text="COLD WAR"
-        android:textColor="@color/colorText"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="240dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/countdownText">
 
         <Space
             android:layout_width="1dp"
@@ -90,77 +59,57 @@
         <Button
             android:id="@+id/primaryWeaponsButton"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:background="@drawable/button"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="Primary Weapons"
             android:fontFamily="@font/blackopsone"
             android:textColor="@color/colorText"
             android:textSize="16dp" />
 
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-        </Space>
-
         <Button
             android:id="@+id/secondaryWeaponsButton"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="Secondary Weapons"
             android:textColor="@color/colorText"
             android:fontFamily="@font/blackopsone"
             android:textSize="16dp" />
 
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-        </Space>
-
         <Button
             android:id="@+id/equipmentButton"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="Equipment"
             android:fontFamily="@font/blackopsone"
             android:textColor="@color/colorText"
             android:textSize="16dp" />
 
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-        </Space>
-
         <Button
             android:id="@+id/perksButton"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="Perks &amp; Wildcards"
             android:fontFamily="@font/blackopsone"
             android:textColor="@color/colorText"
             android:textSize="16dp" />
 
-        <Space
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-        </Space>
-
         <Button
             android:id="@+id/scorestreaksButton"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button"
-            android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:text="Scorestreaks"
             android:fontFamily="@font/blackopsone"
             android:textColor="@color/colorText"
@@ -172,22 +121,17 @@
             android:layout_weight="1" >
         </Space>
 
-    </LinearLayout>
-
-
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-3235243213995142/5169354055"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:adUnitId="ca-app-pub-3235243213995142/5169354055">
 
     </com.google.android.gms.ads.AdView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
