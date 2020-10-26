@@ -34,18 +34,13 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Wildcards"
-            android:label="WILDCARDS"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".Equipment"
             android:label="EQUIPMENT"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Perks"
-            android:label="PERKS"
+            android:label="PERKS &amp; WILDCARDS"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity

@@ -69,96 +69,112 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/primaryWeaponsButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Primary Weapons"
-        android:fontFamily="@font/blackopsone"
-        android:textColor="@color/colorText"
-        android:textSize="16dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countdownText" />
+        app:layout_constraintTop_toBottomOf="@id/countdownText">
 
-    <Button
-        android:id="@+id/secondaryWeaponsButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Secondary Weapons"
-        android:textColor="@color/colorText"
-        android:fontFamily="@font/blackopsone"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/primaryWeaponsButton" />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
 
-    <Button
-        android:id="@+id/equipmentButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Equipment"
-        android:fontFamily="@font/blackopsone"
-        android:textColor="@color/colorText"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondaryWeaponsButton" />
+        <Button
+            android:id="@+id/primaryWeaponsButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Primary Weapons"
+            android:fontFamily="@font/blackopsone"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
 
-    <Button
-        android:id="@+id/perksButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Perks"
-        android:fontFamily="@font/blackopsone"
-        android:textColor="@color/colorText"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/equipmentButton" />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
 
-    <Button
-        android:id="@+id/wildcardsButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Wildcards"
-        android:fontFamily="@font/blackopsone"
-        android:textColor="@color/colorText"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/perksButton" />
+        <Button
+            android:id="@+id/secondaryWeaponsButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Secondary Weapons"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/blackopsone"
+            android:textSize="16dp" />
 
-    <Button
-        android:id="@+id/scorestreaksButton"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:text="Scorestreaks"
-        android:fontFamily="@font/blackopsone"
-        android:textColor="@color/colorText"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wildcardsButton" />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/equipmentButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Equipment"
+            android:fontFamily="@font/blackopsone"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/perksButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Perks &amp; Wildcards"
+            android:fontFamily="@font/blackopsone"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/scorestreaksButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Scorestreaks"
+            android:fontFamily="@font/blackopsone"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </Space>
+
+    </LinearLayout>
+
+
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"

@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.example.coldwarbarracks.Perks_fragment1;
 import com.example.coldwarbarracks.Perks_fragment2;
 import com.example.coldwarbarracks.Perks_fragment3;
+import com.example.coldwarbarracks.Perks_fragment4;
 import com.example.coldwarbarracks.R;
 
 /**
@@ -21,7 +22,7 @@ import com.example.coldwarbarracks.R;
 public class SectionsPagerAdapterPerks extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_perks1, R.string.tab_text_perks2, R.string.tab_text_perks3};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_perks1, R.string.tab_text_perks2, R.string.tab_text_perks3, R.string.tab_text_perks4};
     private final Context mContext;
 
     public SectionsPagerAdapterPerks(Context context, FragmentManager fm) {
@@ -44,6 +45,9 @@ public class SectionsPagerAdapterPerks extends FragmentPagerAdapter {
             case  2:
                 fragment = new Perks_fragment3();
                 break;
+            case  3:
+                fragment = new Perks_fragment4();
+                break;
         }
 
         return fragment;
@@ -57,7 +61,8 @@ public class SectionsPagerAdapterPerks extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
-        return 3;
+
+        //number of tabs
+        return 4;
     }
 }

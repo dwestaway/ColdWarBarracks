@@ -160,17 +160,6 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
             }
         });
 
-        //get display height
-        int height = Resources.getSystem().getDisplayMetrics().heightPixels;
-        //calculate suitable top margin size for buttons
-        int margin = (height - 600) / 30;
-
-        //set button top margins, this is so buttons are spaced out more depending on size of screen
-        ((ConstraintLayout.LayoutParams) submachineGunsButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) tacticalRiflesButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) lightMachineGunsButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) sniperRiflesButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) backButton.getLayoutParams()).topMargin = margin;
 
 
         //initialize banner ad

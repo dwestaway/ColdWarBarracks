@@ -2,10 +2,8 @@ package com.example.coldwarbarracks;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.MotionEvent;
@@ -14,7 +12,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -47,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         final Button secondaryWeaponsButton = findViewById(R.id.secondaryWeaponsButton);
         final Button equipmentButton = findViewById(R.id.equipmentButton);
         final Button perksButton = findViewById(R.id.perksButton);
-        final Button wildcardsButton = findViewById(R.id.wildcardsButton);
         final Button scorestreaksButton = findViewById(R.id.scorestreaksButton);
 
         //load animations
@@ -128,24 +124,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        wildcardsButton.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-                if(event.getAction() == MotionEvent.ACTION_DOWN)
-                {
-                    wildcardsButton.startAnimation(scaleUp);
-                }
-                else if(event.getAction() == MotionEvent.ACTION_UP)
-                {
-                    wildcardsButton.startAnimation(scaleDown);
-                }
-
-                startActivity(new Intent(MainActivity.this, Wildcards.class));
-
-                return true;
-            }
-        });
         scorestreaksButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -165,19 +143,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //get display height
-        int height = Resources.getSystem().getDisplayMetrics().heightPixels;
-        //calculate suitable top margin size for buttons
-        int margin = (height - 600) / 30;
-
-        //Toast.makeText(getApplicationContext(), Integer.toString(margin),Toast.LENGTH_LONG).show();
-
-        //set button top margins, this is so buttons are spaced out more depending on size of screen
-        ((ConstraintLayout.LayoutParams) secondaryWeaponsButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) equipmentButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) perksButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) wildcardsButton.getLayoutParams()).topMargin = margin;
-        ((ConstraintLayout.LayoutParams) scorestreaksButton.getLayoutParams()).topMargin = margin;
 
 
         //initialize banner ad
