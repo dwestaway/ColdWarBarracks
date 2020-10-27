@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.coldwarbarracks">
+    package="com.dwestaway.coldwarbarracks">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,7 +18,7 @@
             android:value="ca-app-pub-3235243213995142~9431693381"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.dwestaway.coldwarbarracks.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
@@ -29,52 +29,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Scorestreaks"
+            android:name="com.dwestaway.coldwarbarracks.Scorestreaks"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Equipment"
+            android:name="com.dwestaway.coldwarbarracks.Equipment"
             android:label="EQUIPMENT"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Perks"
+            android:name="com.dwestaway.coldwarbarracks.Perks"
             android:label="PERKS &amp; WILDCARDS"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SecondaryWeapons"
+            android:name="com.dwestaway.coldwarbarracks.SecondaryWeapons"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SniperRifles"
+            android:name="com.dwestaway.coldwarbarracks.SniperRifles"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".LightMachineGuns"
+            android:name="com.dwestaway.coldwarbarracks.LightMachineGuns"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".TacticalRifles"
+            android:name="com.dwestaway.coldwarbarracks.TacticalRifles"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SubmachineGuns"
+            android:name="com.dwestaway.coldwarbarracks.SubmachineGuns"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AssaultRifles"
+            android:name="com.dwestaway.coldwarbarracks.AssaultRifles"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".PrimaryWeaponsActivity"
+            android:name="com.dwestaway.coldwarbarracks.PrimaryWeaponsActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
