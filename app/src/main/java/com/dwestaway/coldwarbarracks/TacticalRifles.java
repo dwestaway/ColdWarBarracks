@@ -69,10 +69,12 @@ public class TacticalRifles extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("Type 63",
                 getString(R.string.Type_63),
+                "Damage: 68 \t TTK: 400ms \nFire rate: 300rpm \t Range: 51m",
                 R.drawable.type63,
                 R.drawable.type63_stats));
         modelArrayList.add(new MyModel("M16",
                 getString(R.string.M16),
+                "Damage: 50 \t TTK: 132ms \nFire rate: 909rpm \t Range: 24m",
                 R.drawable.m16,
                 R.drawable.m16_stats));
 

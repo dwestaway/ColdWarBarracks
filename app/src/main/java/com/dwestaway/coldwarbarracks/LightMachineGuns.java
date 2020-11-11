@@ -66,10 +66,12 @@ public class LightMachineGuns extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("Stoner 63",
                 getString(R.string.Stoner_63),
+                "Damage: 32 \t TTK: 332ms \nFire rate: 722rpm \t Range: 102m",
                 R.drawable.stoner63,
                 R.drawable.stoner63_stats));
         modelArrayList.add(new MyModel("RPD",
                 getString(R.string.RPD),
+                "Damage: 35 \t TTK: 368ms \nFire rate: 652rpm \t Range: 102m",
                 R.drawable.rpd,
                 R.drawable.rpd_stats));
 

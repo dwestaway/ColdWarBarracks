@@ -80,42 +80,52 @@ public class Scorestreaks extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("RC-XD",
                 getString(R.string.RCXD),
+                "",
                 R.drawable.rcxd,
                 0));
         modelArrayList.add(new MyModel("Spy Plane",
                 getString(R.string.SpyPlane),
+                "",
                 R.drawable.spyplane,
                 0));
         modelArrayList.add(new MyModel("Counter Spy Plane",
                 getString(R.string.CounterSpyPlane),
+                "",
                 R.drawable.counterspyplane,
                 0));
         modelArrayList.add(new MyModel("Sentry Turret",
                 getString(R.string.SentryTurret),
+                "",
                 R.drawable.sentry,
                 0));
         modelArrayList.add(new MyModel("Napalm Strike",
                 getString(R.string.NapalmStrike),
+                "",
                 R.drawable.napalm,
                 0));
         modelArrayList.add(new MyModel("Artillery",
                 getString(R.string.Artillery),
+                "",
                 R.drawable.artillery,
                 0));
         modelArrayList.add(new MyModel("Air Patrol",
                 getString(R.string.AirPatrol),
+                "",
                 R.drawable.airpatrol,
                 0));
         modelArrayList.add(new MyModel("War Machine",
                 getString(R.string.WarMachine),
+                "",
                 R.drawable.warmachine,
                 0));
         modelArrayList.add(new MyModel("Attack Helicopter",
                 getString(R.string.AttackHelicopter),
+                "",
                 R.drawable.attackhelicopter,
                 0));
         modelArrayList.add(new MyModel("Chopper Gunner",
                 getString(R.string.ChopperGunner),
+                "",
                 R.drawable.choppergunner,
                 0));
 

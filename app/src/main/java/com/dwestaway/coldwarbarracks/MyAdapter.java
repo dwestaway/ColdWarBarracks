@@ -46,6 +46,8 @@ public class MyAdapter extends PagerAdapter {
         //init uid views from card.xml
         TextView cardTitle = view.findViewById(R.id.cardTitle);
         TextView cardDesc = view.findViewById(R.id.cardDesc);
+        TextView cardDamage = view.findViewById(R.id.cardDamage);
+
         ImageView cardIv = view.findViewById(R.id.cardIv);
         ImageView statsIv = view.findViewById(R.id.statsIv);
 
@@ -53,12 +55,16 @@ public class MyAdapter extends PagerAdapter {
         MyModel model = modelArrayList.get(position);
         String title = model.getTitle();
         String description = model.getDescription();
+        String damage = model.getDamage();
+
         int image = model.getImage();
         int stats = model.getStats();
 
         //set data
         cardTitle.setText(title);
         cardDesc.setText(description);
+        cardDamage.setText(damage);
+
         cardIv.setImageResource(image);
         statsIv.setImageResource(stats);
 

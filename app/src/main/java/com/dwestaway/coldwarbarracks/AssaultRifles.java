@@ -70,18 +70,22 @@ public class AssaultRifles extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("XM4",
                 getString(R.string.XM4),
+                "Damage: 30 \t TTK: 332ms \nFire rate: 722rpm \t Range: 46m",
                 R.drawable.xm4,
                 R.drawable.xm4_stats));
         modelArrayList.add(new MyModel("AK47",
                 getString(R.string.AK47),
+                "Damage: 38 \t TTK: 300ms \nFire rate: 600rpm \t Range: 38m",
                 R.drawable.ak47,
                 R.drawable.ak47_stats));
         modelArrayList.add(new MyModel("Krig 6",
                 getString(R.string.Krig6),
+                "Damage: 35 \t TTK: 368ms \nFire rate: 652rpm \t Range: 51m",
                 R.drawable.krig6,
                 R.drawable.krig6_stats));
         modelArrayList.add(new MyModel("QBZ-83",
                 getString(R.string.QBZ83),
+                "Damage: 32 \t TTK: 352ms \nFire rate: 681rpm \t Range: 46",
                 R.drawable.qbz83,
                 R.drawable.qbz83_stats));
 

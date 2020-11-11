@@ -66,18 +66,22 @@ public class SubmachineGuns extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("MP5",
                 getString(R.string.MP5),
+                "Damage: 32 \t TTK: 281ms \nFire rate: 857rpm \t Range: 15m",
                 R.drawable.mp5,
                 R.drawable.mp5_stats));
         modelArrayList.add(new MyModel("Milano 821",
                 getString(R.string.Milano_821),
+                "Damage: 42 \t TTK: 312ms \nFire rate: 576rpm \t Range: 13m",
                 R.drawable.milano,
                 R.drawable.milano_stats));
         modelArrayList.add(new MyModel("AK-74u",
                 getString(R.string.AK74u),
+                "Damage: 38 \t TTK: 259ms \nFire rate: 697rpm \t Range: 8m",
                 R.drawable.ak74u,
                 R.drawable.ak74u_stats));
         modelArrayList.add(new MyModel("KSP 45",
                 getString(R.string.KSP_45),
+                "Damage: 50 \t TTK: 166ms \nFire rate: 722rpm \t Range: 11m",
                 R.drawable.ksp,
                 R.drawable.ksp_stats));
 

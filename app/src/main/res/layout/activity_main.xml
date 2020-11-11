@@ -15,26 +15,17 @@
     </Space>
 
 
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:padding="0dp"
-        android:fontFamily="@font/blackopsone"
-        android:layout_gravity="center_horizontal"
-        android:text="COLD WAR"
-        android:textColor="@color/colorText"
-        android:textSize="60sp" />
 
-    <TextView
-        android:id="@+id/title3"
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/blackopsone"
-        android:layout_gravity="center_horizontal"
-        android:text="Barracks"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp" />
+        android:layout_gravity="center"
+        android:maxWidth="445dp"
+        android:layout_height="190dp"
+        android:maxHeight="272dp"
+        android:src="@drawable/logo"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"/>
+
 
         <Space
             android:layout_width="1dp"

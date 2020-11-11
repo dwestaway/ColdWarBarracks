@@ -9,7 +9,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         app:cardCornerRadius="20dp"
         android:background="@color/colorText">
 
@@ -22,7 +24,7 @@
 
             <ImageView
                 android:id="@+id/cardIv"
-                android:src="@drawable/ak47"
+                android:src="@drawable/xm4"
                 android:layout_width="wrap_content"
                 android:maxWidth="283dp"
                 android:layout_gravity="center"
@@ -51,16 +53,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="@string/AK47"
+                android:text="@string/XM4"
                 android:textColor="@color/colorPrimary"
                 android:fontFamily="@font/sfprodisplay_bold"
                 android:textSize="16dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:minLines="4"
                 android:maxLines="4"/>
-            
+            <TextView
+                android:id="@+id/cardDamage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Damage: 30 \t TTK: 329"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/sfprodisplay_bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
 
