@@ -98,4 +98,8 @@ public class AssaultRifles extends AppCompatActivity {
         viewPager.setPadding(100, 0, 100, 0);
 
     }
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(AssaultRifles.this, PrimaryWeaponsActivity.class));
+    }
 }

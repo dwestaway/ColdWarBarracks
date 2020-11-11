@@ -45,4 +45,9 @@ public class Equipment extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Equipment.this, MainActivity.class));
+    }
 }

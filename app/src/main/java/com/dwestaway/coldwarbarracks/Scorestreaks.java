@@ -138,4 +138,9 @@ public class Scorestreaks extends AppCompatActivity {
         viewPager.setPadding(100, 0, 100, 0);
 
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Scorestreaks.this, MainActivity.class));
+    }
 }

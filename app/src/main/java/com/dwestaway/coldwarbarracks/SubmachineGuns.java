@@ -92,4 +92,9 @@ public class SubmachineGuns extends AppCompatActivity {
         //set default padding from left/right
         viewPager.setPadding(100, 0, 100, 0);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(SubmachineGuns.this, PrimaryWeaponsActivity.class));
+    }
 }

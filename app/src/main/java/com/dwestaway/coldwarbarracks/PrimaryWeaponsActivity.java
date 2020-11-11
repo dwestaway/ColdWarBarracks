@@ -171,6 +171,11 @@ public class PrimaryWeaponsActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(PrimaryWeaponsActivity.this, MainActivity.class));
+    }
+
 
 
 
