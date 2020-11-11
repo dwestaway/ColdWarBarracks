@@ -36,20 +36,6 @@
         android:textColor="@color/colorPrimary"
         android:textSize="36sp" />
 
-    <TextView
-        android:id="@+id/countdownText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/blackopsone"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:text="0 days 0 hours 0 minutes"
-        android:textColor="@color/colorText"
-        android:textSize="18sp" />
-
-
-
         <Space
             android:layout_width="1dp"
             android:layout_height="0dp"
