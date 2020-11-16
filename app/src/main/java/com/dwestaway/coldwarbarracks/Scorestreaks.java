@@ -78,6 +78,11 @@ public class Scorestreaks extends AppCompatActivity {
         modelArrayList = new ArrayList<>();
 
         //add items to list
+        modelArrayList.add(new MyModel("Combat Bow",
+                getString(R.string.CombatBow),
+                "",
+                R.drawable.combatbow,
+                0));
         modelArrayList.add(new MyModel("RC-XD",
                 getString(R.string.RCXD),
                 "",
@@ -93,6 +98,16 @@ public class Scorestreaks extends AppCompatActivity {
                 "",
                 R.drawable.counterspyplane,
                 0));
+        modelArrayList.add(new MyModel("Armor",
+                getString(R.string.Armor),
+                "",
+                R.drawable.armor,
+                0));
+        modelArrayList.add(new MyModel("Care Package",
+                getString(R.string.CarePackage),
+                "",
+                R.drawable.carepackage,
+                0));
         modelArrayList.add(new MyModel("Sentry Turret",
                 getString(R.string.SentryTurret),
                 "",
@@ -107,6 +122,11 @@ public class Scorestreaks extends AppCompatActivity {
                 getString(R.string.Artillery),
                 "",
                 R.drawable.artillery,
+                0));
+        modelArrayList.add(new MyModel("Cruise Missile",
+                getString(R.string.CruiseMissile),
+                "",
+                R.drawable.cruisemissile,
                 0));
         modelArrayList.add(new MyModel("Air Patrol",
                 getString(R.string.AirPatrol),
@@ -127,6 +147,16 @@ public class Scorestreaks extends AppCompatActivity {
                 getString(R.string.ChopperGunner),
                 "",
                 R.drawable.choppergunner,
+                0));
+        modelArrayList.add(new MyModel("VTOL Escort",
+                getString(R.string.VTOLEscort),
+                "",
+                R.drawable.vtol_escort,
+                0));
+        modelArrayList.add(new MyModel("Gunship",
+                getString(R.string.Gunship),
+                "",
+                R.drawable.gunship,
                 0));
 
 

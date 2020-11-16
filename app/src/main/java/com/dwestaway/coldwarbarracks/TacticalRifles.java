@@ -77,6 +77,16 @@ public class TacticalRifles extends AppCompatActivity {
                 "Damage: 50 \t TTK: 132ms \nFire rate: 909rpm \t Range: 24m",
                 R.drawable.m16,
                 R.drawable.m16_stats));
+        modelArrayList.add(new MyModel("AUG",
+                getString(R.string.AUG),
+                "Damage: 54 \t TTK: 140ms \nFire rate: 857rpm \t Range: 38m",
+                R.drawable.aug,
+                R.drawable.aug_stats));
+        modelArrayList.add(new MyModel("DMR 14",
+                getString(R.string.DMR_14),
+                "Damage: 58 \t TTK: 332ms \nFire rate: 361rpm \t Range: 51m",
+                R.drawable.dmr14,
+                R.drawable.dmr14_stats));
 
         //setup adapter
         myAdapter = new MyAdapter(this, modelArrayList);

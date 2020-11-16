@@ -105,6 +105,11 @@ public class SecondaryWeapons extends AppCompatActivity {
                 "",
                 R.drawable.knife,
                 R.drawable.knife_stats));
+        modelArrayList.add(new MyModel("M79",
+                getString(R.string.M79),
+                "",
+                R.drawable.m79,
+                R.drawable.m79_stats));
 
 
         //setup adapter

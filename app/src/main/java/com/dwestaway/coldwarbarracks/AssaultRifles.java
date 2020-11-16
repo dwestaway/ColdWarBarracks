@@ -88,6 +88,11 @@ public class AssaultRifles extends AppCompatActivity {
                 "Damage: 32 \t TTK: 352ms \nFire rate: 681rpm \t Range: 46",
                 R.drawable.qbz83,
                 R.drawable.qbz83_stats));
+        modelArrayList.add(new MyModel("FFAR 1",
+                getString(R.string.FFAR_1),
+                "Damage: 28 \t TTK: 330ms \nFire rate: 909rpm \t Range: 39",
+                R.drawable.ffar1,
+                R.drawable.ffar1_stats));
 
 
         //setup adapter

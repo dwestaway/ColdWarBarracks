@@ -66,14 +66,19 @@ public class SniperRifles extends AppCompatActivity {
         //add items to list
         modelArrayList.add(new MyModel("Pelington 703",
                 getString(R.string.Pelingtong703),
-                "Damage: 110 \nFire rate: 54rpm \t Range: 127m",
+                "Damage: 110 \t ADS: 550ms \nFire rate: 54rpm \t Range: 127m",
                 R.drawable.pelington703,
                 R.drawable.pelington703_stats));
         modelArrayList.add(new MyModel("LW3 - Tundra",
                 getString(R.string.LW3_Tundra),
-                "Damage: 110 \nFire rate: 47rpm \t Range: 127m",
+                "Damage: 110 \t ADS: 650ms \nFire rate: 47rpm \t Range: 127m",
                 R.drawable.lw3_tundra,
                 R.drawable.lw3_tundra_stats));
+        modelArrayList.add(new MyModel("M82",
+                getString(R.string.M82),
+                "Damage: 110 \t ADS: 700ms \nFire rate: 180pm \t Range: 127m",
+                R.drawable.m82,
+                R.drawable.m82_stats));
 
         //setup adapter
         myAdapter = new MyAdapter(this, modelArrayList);

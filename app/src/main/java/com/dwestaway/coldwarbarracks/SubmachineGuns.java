@@ -84,6 +84,11 @@ public class SubmachineGuns extends AppCompatActivity {
                 "Damage: 50 \t TTK: 166ms \nFire rate: 722rpm \t Range: 11m",
                 R.drawable.ksp,
                 R.drawable.ksp_stats));
+        modelArrayList.add(new MyModel("Bullfrog",
+                getString(R.string.Bullfrog),
+                "Damage: 34 \t TTK: 320ms \nFire rate: 750rpm \t Range: 19m",
+                R.drawable.bullfrog,
+                R.drawable.bullfrog_stats));
 
         //setup adapter
         myAdapter = new MyAdapter(this, modelArrayList);

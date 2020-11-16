@@ -5,20 +5,26 @@
     <string name="Krig6">Full-auto assault rifle. Improved damage and accuracy. Excellent weapon control and visibility when sustaining fire.</string>
     <string name="XM4">Full-auto assault rifle. Reliable damage with improved fire rate. Fair weapon control when sustaining fire.</string>
     <string name="QBZ83">Full-auto assault rifle. Superiror mobility with improved handling speeds. Erratic initial recoil with less accurate hipfire spread.</string>
+    <string name="FFAR_1">Full-auto assault rifle. Fast fire rate with quick reloading speeds. Modest damage and slightly less ammo capacity.</string>
 
     <string name="AK74u">Full-auto submachine gun. Improved damage with reliable weapon control. Utilizes 5.56mm ammo for superior penetration.</string>
     <string name="Milano_821">Full-auto submachine gun. High damage with a slower fire rate and fair recoil. Improved handling speeds with more accurate hipfire spread.</string>
     <string name="MP5">Full-auto submachine gun. Fast fire rate with low recoil. Good visibility and control while firing.</string>
     <string name="KSP_45">3-round burst submachine gun. High damage with moderate range. Burst fire spread is less efficient at long range.</string>
+    <string name="Bullfrog">Full-auto submachine gun. Reliable damage with improved range. Large ammo pool and less accurate hipfire spread.</string>
 
     <string name="M16">Burst fire tactical rifle. Excellent burst fire accuracy when aiming down sights. Good visibility while firing, with a slightly pronounced delay between bursts.</string>
     <string name="Type_63">Semi-auto tactical rifle. High damage and reliable accuracy with lower ammo capacity. Fair visibility and control while firing.</string>
+    <string name="AUG">Burst fire tactical rifle. High damage with moderate recoil and slower movement speeds when firing. Built in optic provides 1.5x magnification.</string>
+    <string name="DMR_14">Semi-auto tactical rifle. Increased fire rate with minimal recoil. Maintains reliable damage over longer range encounters.</string>
 
     <string name="RPD">Full-auto light machine gun. Improved handling speeds with more accurate hipfire spread. Less ammo capacity and heavier recoil when sustaining fire.</string>
     <string name="Stoner_63">Full-auto light machine gun. Improved fire rate with a large ammo capacity. Good recoil control and visibility when sustaining fire.</string>
+    <string name="M60">Full-auto light machine gun. Consistent ammo capacity with heavy-grain rounds provides premium stopping power and bullet economy. Slower fire rate and handling speeds.</string>
 
     <string name="Pelingtong703">Bolt-action sniper rifle. Hand loaded with improved handling speeds and faster rechamber. 1-shot kill to the head or chest.</string>
     <string name="LW3_Tundra">Bolt-action sniper rifle. High damage with moderate sway, 1-shot kill to the head, chest or shoulders.</string>
+    <string name="M82">Semi-auto sniper rifle. Heavy recoil with slow handling. 1-shot kill to the head or upper chest.</string>
 
 
     <string name="pistol1911">Semi-auto pistol. Good accuracy with a modest ammo capacity. High damage in close range encounters.</string>
@@ -33,16 +39,20 @@
 
     <string name="Knife">Lethal melee weapon. Straight-edge blade that kills enemies with a single deadly strike.</string>
 
+    <string name="M79">Grenade launcher. Fires a grenade projectile that explode son impact. High damage with a significant blast radius.</string>
+
 
     <string name="Frag">Explodes after a short fuse. Can be cooked by holding the grenade key.</string>
     <string name="C4">High explosive charge that sticks to any surface. Deadly when stuck to vehicles.</string>
     <string name="Molotov">Explodes on impact, spreading flames over a small area.</string>
     <string name="Semtex">Grenade that sticks to surfaces before detonating.</string>
+    <string name="Tomahawk">Retrievable axe that kills instantly on impact.</string>
 
     <string name="Stun">Disorients enemies and slows movement. Detonates shortly after impact.</string>
     <string name="Stimshot">Reusable stimulant that initiates healing immediately.</string>
     <string name="Smoke">Produces a smoke screen on impact.</string>
     <string name="Decoy">Simulates footsteps to confuse enemies.</string>
+    <string name="Flashbang">Blind enemies and impairs hearing. Detonates shortly after being thrown.</string>
 
     <string name="ProximityMine">Throwable mine, explodes shortly after an enemy runs or drives over it. Can be avoided by crouching. Destroys any vehicle that runs over it.\nRecharge time: 2:00</string>
     <string name="FieldMic">Deploys a recording device that highlights enemy sounds on your minimap.\nRecharge time: 3:15</string>
@@ -50,22 +60,26 @@
     <string name="SamTurret">Launches missiles at enemy air scorestreaks and player-piloted helicopter.\nRecharge time: 3:45</string>
     <string name="GasMine">Proximity activated trap that expels a large cloud of harmful gas. Enemies inside are damaged and disoriented.\nRecharge time: 2:00</string>
     <string name="Jammer">Creates an electronic disruption field, disabling enemy Field Upgrades and degrading enemy minimap information.\nRecharge time: 2:30</string>
+    <string name="AssaultPack">Supply cache containing ammo that gives bonus score for taking down enemies.\nRecharge time: 3:15</string>
 
 
     <string name="Engineer">Detect enemy equipment and Scorestreaks through walls. See enemy Scorestreaks on your minimap. Re-roll Care Packages.</string>
     <string name="Paranoia">Hear an alert when an enemy aims at you. Your vision pulses if the enemy is outside of your view.</string>
     <string name="TacticalMask">Maximized resistance to Flashbang and Stun Grenade. Immune to gas.</string>
     <string name="FlakJacket">Take less damage from enemy explosives and Molotov and Combat Bow flames.</string>
+    <string name="ForwardIntel">See indicators for enemy reinforcements on your minimap. Minimap shows a larger area.</string>
 
     <string name="Scavenger">Replenish ammo from fallen players.</string>
     <string name="Assassin">Enemies that appear on your minimap when shooting or revealed by a Spy Plane will have a crosshair indicator instead of a red dot if they are on a killstreak. Recieve extra Score for taking them down.</string>
     <string name="Tracker">See imprint of enemy footsteps. Aim at enemies to reveal them on your teams minimap.</string>
     <string name="Quartermaster">Recharge Equipment over 25 seconds.</string>
+    <string name="Gearhead">Reduce Field Upgrade cooldown. Store up to two Field Upgrade charges.</string>
 
     <string name="GungHo">Fire your weapon and use Equipment while sprinting. Move at full speed when reloading. Switch weapons faster. Take less damage from falling. Fire more accurately while sliding.</string>
     <string name="Ghost">Undetectable by enemy Spy Planes whenever you are moving, planting or defusing bombs, or controlling Scorestreaks.</string>
     <string name="ColdBlooded">AI-controlled Scorestreaks will not target you. Player-controlled Scorestreaks will not highlight you. Show up cold on Thermal. Players in vehicles wont see your nameplate.</string>
     <string name="Ninja">Sprint more quietly. Resistant to Field Mic when sprinting. Speak only when necessary.</string>
+    <string name="Spycraft">Hack enemy Field Upgrades. Immune to Counter Spy Plane, Jammer, Tracker, and Paranoia. Wont trigger Proximity Mines or Gas Mines. Booby trap enemy Care Pacakages.</string>
 
 
     <string name="DangerClose">Equip extra lethal and tactical equipment. Start with additional ammo.</string>
@@ -74,16 +88,22 @@
     <string name="PerkGreed">Equip an extra Perk from each Perk Category.</string>
 
 
+    <string name="CombatBow">Arrows burn targets and the surrounding area. Cooldown 120 sec</string>
     <string name="RCXD">Remote controlled car strapped with explosives. Cooldown: 90 sec</string>
     <string name="SpyPlane">Reveal enemy positions through the Fog of War. Cooldown: 90 sec</string>
     <string name="CounterSpyPlane">Scramble enemy mini-maps and disable hostile Missile Turrets for a short time. Cooldown: 60 sec</string>
+    <string name="Armor">Reduces incoming bullet damage. Destroyed after it absorbs too much damage. Cooldown 120 sec</string>
+    <string name="CarePackage">Airdrop a random Scorestreak. Crate self-destructs after use. Cooldown: 90 sec</string>
     <string name="SentryTurret">Deploy a deadly automated turret that targets enemy player, vehicles and equipment. Cooldown: 60 sec</string>
     <string name="NapalmStrike">Launch a targeted carpet bomb strike of explosive napalm. Cooldown: 60 sec</string>
     <string name="Artillery">Launch three targeted airstrikes. Unused strikes can be saved for later. Cooldown: 60 sec</string>
+    <string name="CruiseMissile">Steer a trio of missiles with boost and air brake controls. Secondary missiles auto-fire at painted targets. Cooldown: 90 sec</string>
     <string name="AirPatrol">Call in a squadron of jets to attack enemy air Scorestreaks. Counter enemy Air Patrols. Cooldown: 60 sec</string>
     <string name="WarMachine">High-explosive grenade launcher. Cooldown: 60 sec</string>
     <string name="AttackHelicopter">Call in an armed support helicopter. Cooldown: 60 sec</string>
     <string name="ChopperGunner">Be the gunner in a close air support helicopter. Cooldown: 60 sec</string>
+    <string name="VTOLEscort">Lay waste to enemy infantry and vehicles from the cockpit of a powerful VTOL jet. Cooldown: 90 sec</string>
+    <string name="Gunship">Be the gunner in a close air support gunship. Cooldown: 90 sec</string>
 
 
     <string name="tab_text_1">Lethal</string>
